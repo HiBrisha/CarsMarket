@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "jsxImportSource": "@emotion/react",
+    "paths": {
+      "~assets/*": ["./src/assets/*"],
+      "~components/*": ["./src/components/*"],
+      "~contexts/*": ["./src/contexts/*"],
+      "~core/*": ["./src/core/*"],
+      "~layouts/*": ["./src/layouts/*"],
+      "~pages/*": ["./src/pages/*"],
+      "~routes/*": ["./src/routes/*"],
+      "~shared/*": ["./src/shared/*"],
+      "~styles/*": ["./src/styles/*"],
+      "~types/*": ["./src/types/*"],
+      "~translation/*": ["./src/translation/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts", "**/*.ts", "**/*.tsx", "src/custom.d.ts", "**/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
