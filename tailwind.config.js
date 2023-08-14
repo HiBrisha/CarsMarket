@@ -23,6 +23,9 @@ export default {
       borderRadius: {
         form: '30px 0 30px 0',
       },
+      borderWidth:{
+        '1':'1px'
+      }
     },
   },
   plugins: [],

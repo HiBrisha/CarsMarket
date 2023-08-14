@@ -3,9 +3,9 @@ import mercedes from '~assets/images/mercedes.png'
 export const Home = () => {
   return (
     <>
-      <div className={`w-full h-screen flex justify-center items-center bg-center bg-cover font-serif`} style={{ backgroundImage: `url(${image})` }}>
-        <section className='w-8/12 h-1/2 grid grid-cols-2 grid-rows-1 gap-4'>
-          <div className='flex flex-col'>
+      <div className={`w-full h-screen flex justify-center bg-center bg-cover font-serif`} style={{ backgroundImage: `url(${image})` }}>
+        <section className='w-8/12 h-[calc(100vh-331px)] translate-y-12 grid grid-cols-2 grid-rows-1 gap-4'>
+          <div className='flex flex-col justify-center'>
             <span className='text-2xl text-green-light'>Plan your trip now</span>
             <h1 className='text-4xl mt-4'>Explore the world with comfortable car</h1>
             <p className='text-gray-500 mt-4'>
@@ -20,8 +20,8 @@ export const Home = () => {
               </button>
             </div>
           </div>
-          <div className=''>
-            <img className='img-fluid' src={mercedes} alt='' srcSet='' />
+          <div className='flex items-center'>
+            <img src={mercedes} alt='' srcSet='' />
           </div>
         </section>
       </div>
