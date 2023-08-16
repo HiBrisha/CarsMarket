@@ -7,7 +7,7 @@ export const Navigation: React.FC<navOps> = ({ isLoggedIn }) => {
   const location = useLocation().pathname
 
   return (
-    <header className='fixed top-0 w-full h-16 grid grid-cols-6 grid-rows-1 gap-4 border-b-2 border-gray bg-white'>
+    <header className='fixed top-0 w-full h-16 grid grid-cols-6 grid-rows-1 gap-4 border-b-2 border-gray bg-white z-100'>
       <div className='lg:col-span-1 flex justify-start items-center ml-4'>
         <img src={logo} className='object-cover h-12 w-12' alt='' srcSet='' />
         <h1 className='text-3xl font-semibold ml-4'>Hieu's Car</h1>

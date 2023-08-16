@@ -26,7 +26,7 @@
     "paths": {
       "~assets/*": ["./src/assets/*"],
       "~components/*": ["./src/components/*"],
-      "~contexts/*": ["./src/contexts/*"],
+      "~reducers/*": ["./src/reducers/*"],
       "~core/*": ["./src/core/*"],
       "~layouts/*": ["./src/layouts/*"],
       "~pages/*": ["./src/pages/*"],

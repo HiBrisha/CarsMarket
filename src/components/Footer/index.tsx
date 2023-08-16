@@ -4,11 +4,7 @@ import { FmdGood as FmdGoodIcon, PermPhoneMsg as PhoneIcon, Email as Email, Pict
 
 export const Footer: React.FC<footerProps> = ({ address, phone, email, file }) => {
   return (
-    <footer
-      className={`${
-        ['/', '/signin', '/signup'].includes(useLocation().pathname) ? 'fixed bottom-0' : ''
-      }  w-full h-fit grid grid-cols-4 grid-rows-7 gap-8 p-4 bg-dark-light text-white`}
-    >
+    <footer className={`fixed bottom-0 w-full h-fit grid grid-cols-4 grid-rows-7 gap-8 p-4 bg-dark-light text-white`}>
       <div>
         <h5 className='text-2xl font-semibold mb-4'>About Rentaly</h5>
         <p>
