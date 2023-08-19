@@ -23,9 +23,24 @@ export default {
       borderRadius: {
         form: '30px 0 30px 0',
       },
-      borderWidth:{
-        '1':'1px'
-      }
+      borderWidth: {
+        1: '1px',
+      },
+      animation: {
+        fadeInRight: 'fadeInRight 1s linear infinite',
+      },
+      keyframes: {
+        fadeInRight: {
+          from: {
+            opacity: 0,
+            transform: 'translateX(80px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateX(0)',
+          },
+        },
+      },
     },
   },
   plugins: [],
