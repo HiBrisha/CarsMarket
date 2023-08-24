@@ -1,4 +1,4 @@
-import { Routes } from 'react-router-dom'
+import { Routes, useLocation } from 'react-router-dom'
 import { routesElement } from './routers'
 import { Navigation } from '~components/Navigation'
 import { Footer } from '~components/Footer'
@@ -9,9 +9,11 @@ export const App = () => {
   return (
     <>
       <Provider store={store}>
-        <Navigation isLoggedIn={false} />
+        <Navigation />
         <Routes>{routesElement}</Routes>
-        <Footer address='Thach Son 7 Hoa khanh, Lien Chieu, Da Nang city' phone='+84 389742037' email='Hieu.nguyenminh@biendongco.vn' file='Download Brochure' />
+        {useLocation().pathname !== '/cars' ? (
+          <Footer address='Thach Son 7 Hoa khanh, Lien Chieu, Da Nang city' phone='+84 389742037' email='Hieu.nguyenminh@biendongco.vn' file='Download Brochure' />
+        ) : null}
       </Provider>
     </>
   )

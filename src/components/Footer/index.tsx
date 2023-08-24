@@ -1,10 +1,15 @@
 import { footerProps } from './types'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { FmdGood as FmdGoodIcon, PermPhoneMsg as PhoneIcon, Email as Email, PictureAsPdf, Facebook, Twitter, ConnectWithoutContact, LinkedIn, Pinterest } from '@mui/icons-material'
 
 export const Footer: React.FC<footerProps> = ({ address, phone, email, file }) => {
   return (
-    <footer className={`fixed bottom-0 w-full h-fit grid grid-cols-4 grid-rows-7 gap-8 p-4 bg-dark-light text-white`}>
+    <footer
+      className={`${
+        ['/cars', '/sells'].includes(useLocation().pathname) ? 'relative' : 'fixed bottom-0'
+      } w-full h-fit grid grid-cols-4 grid-rows-7 gap-8 p-4 bg-dark-light text-white z-100`}
+    >
       <div>
         <h5 className='text-2xl font-semibold mb-4'>About Rentaly</h5>
         <p>

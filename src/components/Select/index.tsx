@@ -1,7 +1,7 @@
 import React from 'react'
 import { FilterAlt } from '@mui/icons-material'
 import { useSelector, useDispatch } from 'react-redux'
-import { setTypes } from '~reducers/TypeCars/slice'
+import { setTypes } from '~reducers/slices/TypeCars'
 import { typeReducer, selectCars } from '~types/index'
 import car_icon from '~assets/images/car_icons.png'
 import audi from '~assets/images/Audi.png'

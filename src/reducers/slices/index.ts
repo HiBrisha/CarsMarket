@@ -1,10 +1,11 @@
 // rootReducer.ts
 import { combineReducers } from 'redux';
-import typeCarReducer from './slice';
+import typeCarReducer from './TypeCars';
+import isLoginReducer from './isLogin'
 
 const rootReducer = combineReducers({
     typesCar: typeCarReducer,
-    // other reducers...
+    isLogin:isLoginReducer
 });
 
 export default rootReducer;
